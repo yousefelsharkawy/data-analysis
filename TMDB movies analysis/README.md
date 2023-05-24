@@ -91,7 +91,7 @@ A4:
     
     Adventure was the most popular genre , followed by science fiction, fantasy, ation then animation.
     - Most Profitable Genres
-    <img src = "result_graphs/Q5_genres_that_made_more_money.png"/> 
+    <img src = "result_graphs\Q5_Genres_that_made_more_money.png"/> 
     
     - Top Genres Preferences Over Decades
     ![alt-text-2](result_graphs/Q5_top_genres_over_time.png "title-2") 
