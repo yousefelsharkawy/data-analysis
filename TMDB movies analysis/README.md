@@ -67,11 +67,11 @@ The cleaned dataset is then explored using descriptive statistics and visualizat
 The findings and answers to the research questions are summarized as follows:
 
 - Q1: Does the amount of budget affect the rating of a movie?
-![Q1 answer](result_graphs/Q1.png)
+<img src = "result_graphs/Q1.png"/>
 A1: Movies with higher budget generally received higher ratings  
 
 - Q2: Does the duration of a movie affect the rating?
-![Q1 answer](result_graphs/Q2_res.png)
+<img src = "result_graphs/Q2_res.png"/>
 A2: Movies with longer duration generally received higher ratings
 
 - Q3: What are the changes of different features of movies over the years?
@@ -81,15 +81,18 @@ A3: Popularity, budget, revenue, and vote count of movies increased over time, w
 - Q4: What are the movies with the most gains and most losses? 
 A4: 
    - The movies with the most gains were Avatar, Star Wars: The Force Awakens, Titanic, Jurassic World, and Furious 7. 
-   ![alt-text-2](result_graphs/Q4_a.png "title-2")
+   <img src = "result_graphs/Q4_a.png"/>
    - The movies with the most losses were The Warrior's Way, The Lone Ranger, The Wolfman, The Pacific, and Double Wedding.
-   ![alt-text-2](result_graphs/Q4_b.png "title-2")
+   <img src = "result_graphs/Q4_b.png"/>
+   
 - Q5: What are the different statistics of genres?
-    - most popular genres 
-    ![alt-text-2](result_graphs/Q5_genres_that_have_most_popularity.png "title-2")
+    - most popular genres
+    <img src = "result_graphs/Q5_genres_that_have_most_popularity.png"/> 
+    
     Adventure was the most popular genre , followed by science fiction, fantasy, ation then animation.
-    - Most Profitable Genres 
-    ![alt-text-2](result_graphs/Q5_genres_that_made_more_money.png "title-2")
+    - Most Profitable Genres
+    <img src = "result_graphs/Q5_genres_that_made_more_money.png"/> 
+    
     - Top Genres Preferences Over Decades
     ![alt-text-2](result_graphs/Q5_top_genres_over_time.png "title-2") 
     We See That Documentaries Were The Favourite Until the 90s Then TV Movies Topped It 
