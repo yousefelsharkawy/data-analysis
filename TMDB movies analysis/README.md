@@ -76,7 +76,8 @@ A2: Movies with longer duration generally received higher ratings
 
 - Q3: What are the changes of different features of movies over the years?
 A3: Popularity, budget, revenue, and vote count of movies increased over time, while duration and ratings decreased over time
-<img src = "result_graphs/Q3_a.png" width ="275" /><img src = "result_graphs/Q3_b.png" width ="275" /><img src = "result_graphs/Q3_c.png" width ="275" /><img src = "result_graphs/Q3_d.png" width ="275" /><img src = "result_graphs/Q3_e.png" width ="275" /><img src = "result_graphs/Q3_f.png" width ="275" />
+
+<img src = "result_graphs/Q3_a.png" width ="270" /><img src = "result_graphs/Q3_b.png" width ="270" /><img src = "result_graphs/Q3_c.png" width ="270" /><img src = "result_graphs/Q3_d.png" width ="270" /><img src = "result_graphs/Q3_e.png" width ="270" /><img src = "result_graphs/Q3_f.png" width ="270" />
 
 - Q4: What are the movies with the most gains and most losses? 
 A4: 
