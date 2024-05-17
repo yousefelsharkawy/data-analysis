@@ -1,83 +1,76 @@
-# Bike-Sharing Dataset Investigation
+# 🚲 Bike-Sharing Dataset Investigation
 
-This repository applies The Data Analysis Process on Bike-sharing dataset gathered from 3 different companies in the United States for last 12 Month (May 2023 - April 2024). 
-
+This repository leverages the Data Analysis Process on bike-sharing datasets collected from three different companies in the United States over the last 12 months (May 2023 - April 2024).
 
 ![Bike-Sharing](assets/logos.png)
 
-
-## Table of Contents
+## 📑 Table of Contents
 - [Overview of the Data](#overview)
 - [Data Wrangling](#wrangling)
 - [Insights](#insights)
 
-
 <a id='overview'></a>
-## Overview of the Data
+## 📊 Overview of the Data
 
-There are 3 datasets in this project, they were gathered from 3 different companies
+This project includes three datasets sourced from three distinct companies:
+
 1. **Divvy** - Chicago, Illinois
 
-![Divvy](assets/divvy.jpg)
+   ![Divvy](assets/divvy.jpg)
 
-Divvy is Chicagoland’s bike share system across Chicago and Evanston. It provides datasets of bike trips for public use on a monthly basis and it can be accessed [Here](https://divvybikes.com/system-data) 
+   Divvy is Chicagoland’s bike share system covering Chicago and Evanston. It offers monthly bike trip datasets for public use, accessible [here](https://divvybikes.com/system-data).
 
 2. **Citi Bike** - New York City, New York
 
-![Citi Bike](assets/citibike.jpg)
+   ![Citi Bike](assets/citibike.jpg)
 
-Citi Bike is a privately owned public bicycle sharing system serving the New York City boroughs of the Bronx, Brooklyn, Manhattan, and Queens, as well as Jersey City, New Jersey. It provides datasets of bike trips for public use on a monthly basis. Its data can be accessed [Here](https://www.citibikenyc.com/system-data)
+   Citi Bike is a privately owned public bicycle sharing system serving the New York City boroughs of the Bronx, Brooklyn, Manhattan, and Queens, as well as Jersey City, New Jersey. Monthly bike trip datasets are available [here](https://www.citibikenyc.com/system-data).
 
 3. **Capital Bikeshare** - Washington, D.C.
 
-![Capital Bikeshare](assets/capital_bikeshare.jpg)
+   ![Capital Bikeshare](assets/capital_bikeshare.jpg)
 
-Capital Bikeshare is a bicycle sharing system that serves Washington, D.C.; Arlington County, Virginia. It provides datasets of bike trips which can be accessed [Here](https://www.capitalbikeshare.com/system-data)
+   Capital Bikeshare serves Washington, D.C. and Arlington County, Virginia. The datasets of bike trips can be accessed [here](https://www.capitalbikeshare.com/system-data).
 
+The data provided by these companies has become consistent in recent years, featuring the following columns:
 
-The nature of the data and its format underwent a lot of changes over the years. However, in the recent years, the data provided by the companies has been consistent. It contains the following columns:
-
-- `ride_id`: unique identifier for each ride
-- `rideable_type`: type of bike used for the ride
-- `started_at`: date and time when the ride started
-- `ended_at`: date and time when the ride ended
-- `start_station_name`: name of the station where the ride started
-- `start_station_id`: unique identifier for the station where the ride started
-- `end_station_name`: name of the station where the ride ended
-- `end_station_id`: unique identifier for the station where the ride ended
-- `start_lat`: latitude of the station where the ride started
-- `start_lng`: longitude of the station where the ride started
-- `end_lat`: latitude of the station where the ride ended
-- `end_lng`: longitude of the station where the ride ended
-- `member_casual`: type of user for the ride, member for users with a membership, casual for users without a membership
-
+- `ride_id`: Unique identifier for each ride
+- `rideable_type`: Type of bike used for the ride
+- `started_at`: Date and time when the ride started
+- `ended_at`: Date and time when the ride ended
+- `start_station_name`: Name of the station where the ride started
+- `start_station_id`: Unique identifier for the station where the ride started
+- `end_station_name`: Name of the station where the ride ended
+- `end_station_id`: Unique identifier for the station where the ride ended
+- `start_lat`: Latitude of the station where the ride started
+- `start_lng`: Longitude of the station where the ride started
+- `end_lat`: Latitude of the station where the ride ended
+- `end_lng`: Longitude of the station where the ride ended
+- `member_casual`: Type of user for the ride, member for users with a membership, casual for users without a membership
 
 <a id='wrangling'></a>
-## Data Wrangling
+## 🛠️ Data Wrangling
 
-The code involved in the data wrangling process can be found in the `wrangle_data.py` file. The data wrangling process includes the following steps:
+The data wrangling process, detailed in the `wrangle_data.py` file, involves:
 
-1. **Data Collection**: The data is collected from the respective websites of the companies.
-
-2. **Data Assessment**: The data Types, Missing Values, Duplicates, etc. are assessed. and issues were identified for the cleaning process.
-
-3. **Data Cleaning**: The issues identified in the assessment process are cleaned. These issues involved 
-    - Droping unrelevant columns
-    - Fixing data types
-    - Removing Outliers
-    - Handling Missing Values
-    - Unifying Stations' Coordinates for Further analysis 
-    - Combining the 3 datasets into one dataset
-
+1. **Data Collection**: Gathering data from the respective company websites.
+2. **Data Assessment**: Evaluating data types, missing values, duplicates, etc., and identifying issues for cleaning.
+3. **Data Cleaning**: Addressing identified issues, including:
+   - Dropping irrelevant columns
+   - Fixing data types
+   - Removing outliers
+   - Handling missing values
+   - Unifying station coordinates for further analysis
+   - Combining the three datasets into one comprehensive dataset
 
 <a id='insights'></a>
-## Insights
+## 🔍 Insights
 
-**`Tableau`** was used to visualize the data and gain insights. The dashboard can be accessed below
+**`Tableau`** was used to visualize the data and derive insights. The interactive dashboard can be accessed below:
 
 [![Tableau Dashboard](assets/Dashboard.png)](https://public.tableau.com/views/Bike-ShareDatasetsAnalysis/Statistics?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
-The Dashboard is fully interactive and contains filters on the following 
+The dashboard includes filters for:
 - City
 - Month
 - User Type
@@ -85,35 +78,32 @@ The Dashboard is fully interactive and contains filters on the following
 - Selecting Top N Stations
 - Different Hours of the Day
 
+### 🌟 Key Insights
 
-Some of The gathered insights Are:
+Here are Few examples on using the dashboard to derive insights:
 
-- For `Chicago`, As the weather gets warmer, the number of rides increases along the coast of Lake Michigan
+- **Chicago**: As the weather warms up, the number of rides increases along the coast of Lake Michigan.
+  
+  ![Chicago](assets/insight1.png)
+  
+  *Comparison: March 2024 (left) vs. December 2023 (right)*
 
-![Chicago](assets/insight1.png)
+  Rides along the coast tend to have longer durations regardless of the month.
 
-A screenshot of the city on March 2024 (left) Vs December 2023 (right)
+- **New York City**: The highest number of rides are in South Hoboken and Grove St Path.
+  
+  ![New York City](assets/insight2.png)
 
-The duration is also generally higher along the coast of Lake Michigan regardless of the month
+- **Washington D.C.**: In the past winter, areas around the Potomac River, like Jefferson and Lincoln Memorial, had the highest number of rides. As the weather warmed in 2024, areas around New Hampshire gained popularity.
+  
+  ![Washington D.C.](assets/insight3.png)
+  
+  *Comparison: Late 2023 (left) vs. early 2024 (right)*
 
-- For `New York City`, The number of rides is generally higher in 2 main areas of the city, South Hoboken and Grove St Path
+  Similar to Chicago, ride durations are generally higher around the Potomac River regardless of the month.
 
-![New York City](assets/insight2.png)
+- **Favorite Hours**: Peak ride times are around 8 am and between 4-6 pm.
 
-- For `Washington D.C.`, In last winter, Areas around the potamac river such as Jefferson and Lincoln Memorial had the highest number of rides. However As the weather got warmer in 2024, areas around New Hampshire started to gain popularity
+  ![Favorite Hour](assets/insight4.png)
 
-![Washington D.C.](assets/insight3.png)
-
-a screenshot of the city in late 2023 (left) Vs early 2024 (right)
-
-notice also that the duration of rides is generally higher in areas around the potamac river regardless of the month (same as Chicago)
-
-- Regarding the favourite hour of the day, there are 2 main peaks in the number of rides, one around 8 am in the morning and the other between 4-6 pm late in the afternoon
-
-![Favourite Hour](assets/insight4.png)
-
-
-Express more insights and customize these visualizations for different stations, months, user types, rideable types, etc. by visiting the [Dashboard](https://public.tableau.com/views/Bike-ShareDatasetsAnalysis/Statistics?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
-
-
-
+Discover more insights and customize visualizations by visiting the [Dashboard!!](https://public.tableau.com/views/Bike-ShareDatasetsAnalysis/Statistics?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
