@@ -16,7 +16,7 @@ This project includes three datasets sourced from three distinct companies:
 
 1. **Divvy** - Chicago, Illinois
 
-   ![Divvy](assets/divvy.jpg)
+   ![Divvy](assets/Divvy.jpg)
 
    Divvy is Chicagoland’s bike share system covering Chicago and Evanston. It offers monthly bike trip datasets for public use, accessible [here](https://divvybikes.com/system-data).
 
